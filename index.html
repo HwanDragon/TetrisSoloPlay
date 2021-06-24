@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tetris</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="Logo" style="font-size: 50px; color:rgb(255, 0, 0)"> H-stress </h1> 
+        <h1 id="Logo2" style="font-size: 20px; color:rgb(0, 68, 255)">  made by KHY  </h1> 
+        <div id="description" style="text-align: left ; color:#bcda13">Hold : V, Hard drop : space(한글안됨)</div>
+        
+        <div id="contents">
+            <div id="hold_block_area">
+                <canvas id="hold_display_canvas" class="canvas" style="background-color:rgb(10, 10, 10);"></canvas>
+            </div>
+            <div id="main_tetris_area">
+                <div id="display_area">
+                    <canvas id="main_display_canvas" class="canvas" style="background-color:rgb(10, 10, 10);"></canvas>
+                </div>
+                <input type="button" id="start_button" value="start">
+                <div id="score">
+
+                </div>
+            </div>
+            <div id="next_block_area">
+                <canvas id="next_display_canvas" class="canvas" style="background-color:rgb(10, 10, 10);"></canvas>
+            </div>
+            <div id="etc_area">
+                <div id="other_users_area">
+                    <canvas id="other_users_canvas" class="canvas" style="background-color:rgb(10, 10, 10);"></canvas>
+                </div>
+                <div id="chatting">
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/Debug.js"></script>
+        <script src="./js/constant/Shapes.js"></script>
+        <script src="./js/constant/CanvasSize.js"></script>
+        <script src="./js/constant/PieceMoveTime.js"></script>
+        <script src="./js/constant/Color.js"></script>
+        <script src="./js/constant/GameState.js"></script>
+        <script src="./js/constant/KeyType.js"></script>
+        <script src="./js/constant/TetrisLevel.js"></script>
+        <script src="./js/data/Position.js"></script>
+        <script src="./js/data/PieceFactory.js"></script>
+        <script src="./js/data/Piece.js"></script>
+        <script src="./js/data/BoardExtension.js"></script>
+        <script src="./js/data/Board.js"></script>
+        <script src="./js/componentModel/board/BaseBoard.js"></script>
+        <script src="./js/componentModel/board/BoardManager.js"></script>
+        <script src="./js/tetrisViewer/Frame.js"></script>
+        <script src="js/tetrisViewer/TetrisStyle.js"></script>
+        <script src="js/tetrisViewer/TetrisCanvasViewer.js"></script>
+        <script src="./js/Tetris.js"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
